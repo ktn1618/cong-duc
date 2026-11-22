@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson Notes</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div id="bar">
+    <button id="smaller" title="Smaller text">A−</button>
+    <button id="bigger" title="Bigger text">A+</button>
+    <button id="theme" title="Light / dark">◐</button>
+    <span class="sep"></span>
+    <button class="hl y" data-color="#fff176" title="Alt+1">&nbsp;</button>
+    <button class="hl g" data-color="#a5f3a0" title="Alt+2">&nbsp;</button>
+    <button class="hl p" data-color="#ffb3d1" title="Alt+3">&nbsp;</button>
+    <button id="clearhl" title="Alt+0: remove highlight">✕</button>
+    <span class="sep"></span>
+    <button id="clear" title="Clear all notes">New</button>
+  </div>
+  <div id="editor" contenteditable="true" spellcheck="false" autofocus></div>
+  <div id="hint">Ctrl+B bold · Alt+1/2/3 highlight · Alt+0 clear highlight · "-&gt;" becomes →</div>
+  <script src="panel.js"></script>
+</body>
+</html>

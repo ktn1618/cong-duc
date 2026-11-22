@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Lesson Notes",
+  "version": "1.0",
+  "description": "Side-panel notepad for live typing while screen recording English lessons.",
+  "permissions": ["sidePanel", "storage"],
+  "action": { "default_title": "Open lesson notes" },
+  "side_panel": { "default_path": "panel.html" },
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "open-notes": {
+      "suggested_key": { "default": "Alt+N" },
+      "description": "Open lesson notes side panel"
+    }
+  }
+}

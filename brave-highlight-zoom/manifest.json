@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Zoom",
+  "version": "1.0",
+  "description": "Shows selected text in a large card next to the selection. Click the toolbar icon to turn it on or off.",
+  "permissions": ["storage"],
+  "action": { "default_title": "Highlight Zoom: click to toggle" },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_idle" }
+  ]
+}
